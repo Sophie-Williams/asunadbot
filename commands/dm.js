@@ -8,9 +8,9 @@ module.exports.run = async (client,message,args) => {
     	member.send(`${say}\n from ${message.author.username}`).catch(err => message.channel.send(`${err.name}: ${err.message}`));
 	    message.channel.send(`messages sent to ${member}`);
     }
-    else message.channel.send("mention a valid user")
+    else message.channel.send("**${message.author.username}**: Mention a user")
     }
-    else message.channel.send(`you do not have any permission ${message.author.username}`)
+    else message.channel.send(`:x: | You do not have permission to use that command.`)
 }
 
 module.exports.help = {
