@@ -11,14 +11,14 @@ module.exports.run = async (client,message,args) => {
    var tagged = message.mentions.members.first() || message.guild.members.get(args[0]);
    var user = message.author.username
   
-   if(!tagged)message.channel.send("who do you want to pat??")
+   if(!tagged)message.channel.send(":x: | Invalid usage.")
    else{
     if (tagged.id === client.user.id) {
-       message.channel.send("yay i love pats *smiles*")
+       message.channel.send(":blush: | I love pats *smiles*")
    }
    else {
    if (tagged.id === message.author.id){
-   message.channel.send("aww dont be like that *pats*")    
+   message.channel.send(":hugging: | Aww dont be like that *pats*")    
    }
    else{	    
    var member = tagged.user.username
