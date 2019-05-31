@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 
 module.exports.run = async (client,message,args) => {
     if(message.guild.id === "374071874222686211")return;
-    if(message.guild === null)message.channel.send("this is a server only command")
+    if(message.guild === null)message.channel.send(":x: | This command cannot be used in DMs.")
     	else{
     	var member = message.mentions.members.first() || message.guild.members.get(args[0]);
     	var reason = message.content.substring(27)
@@ -11,16 +11,16 @@ module.exports.run = async (client,message,args) => {
     			if(member){
     			if(member.bannable){
     				member.ban(reason)
-    				message.channel.send(member + " had been banned for :" + reason)
-    				member.send("you have been banned for " + reason)
+    				message.channel.send(":white_check_mark: | " member + " had been banned for :" + reason)
+    				member.send(":exclamation: | You have been banned for " + reason)
     			}
-    			else message.channel.send("cannot ban member my role is too low or they are admin")
+    			else message.channel.send(":x: | Cannot ban member my role is too low or they are admin")
     			}
-    			else message.channel.send("please mention a valid user")
+    			else message.channel.send(":x: | Please mention a valid user")
     		}
     		else message.channel.send("`%ban (user)`")
     	}
-    	else message.channel.send("you do not have permission to ban")
+    	else message.channel.send(":x: | Insufficient Permissions.")
     	}
 }
 
