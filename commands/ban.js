@@ -14,7 +14,7 @@ module.exports.run = async (client,message,args) => {
     				message.channel.send(":white_check_mark: | " member + " had been banned for :" + reason)
     				member.send(":exclamation: | You have been banned for " + reason)
     			}
-    			else message.channel.send(":x: | Cannot ban member my role is too low or they are admin")
+    			else message.channel.send(":x: | Cannot ban specified user.")
     			}
     			else message.channel.send(":x: | Please mention a valid user")
     		}
