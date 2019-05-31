@@ -7,7 +7,7 @@ module.exports.run = async (client,message,args) => {
     let {body} = await superagent
     .get(`https://nekos.life/api/v2/img/boobs`);
     message.channel.send(`${user} here are some boobs`, {file: body.url})
-    }else message.channel.send("OH NOES THE ANIME TIDDYS ARE TOO BIG FOR THIS CHANNEL!!!!!!!!!!!!!!!!!!!!! please use a channel marked for nsfw content")
+    }else message.channel.send(":x: | This is not an NSFW channel.")
 }
 
 
