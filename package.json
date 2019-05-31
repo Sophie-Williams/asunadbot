@@ -1,0 +1,20 @@
+{
+  "name": "asuna",
+  "version": "2.0.0",
+  "description": "simple bot",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "floodlockgames",
+  "license": "ISC",
+  "dependencies": {
+    "botlist.space": "^1.1.0",
+    "dblapi.js": "^2.3.0",
+    "discord.js": "^11.5.0",
+    "request": "^2.87.0",
+    "superagent": "^3.8.3",
+    "taihou": "^2.0.2",
+    "webhook-discord": "^2.4.1"
+  }
+}
