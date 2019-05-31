@@ -7,7 +7,7 @@ module.exports.run = async (client,message,args) => {
     let {body} = await superagent
     .get(`https://nekos.life/api/v2/img/trap`);
     message.channel.send(`${user} here a trap`, {file: body.url})
-    }else message.channel.send("not saying traps are gay but THINK OF THE KIDS!!!!!!!! THEY DONT WANT TO SEE THIS BAKA!!!!!!!! \nthis channel is not marked for nsfw content")
+    }else message.channel.send(":x: | This is not a NSFW channel.")
 }
 
 
