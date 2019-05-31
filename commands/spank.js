@@ -23,9 +23,9 @@ module.exports.run = async (client,message,args) => {
     var spanks = (spank[Math.floor(Math.random() * spank.length)]);
     if (message.channel.nsfw){
     	if (args[0])message.channel.send(message.author.toString() + " has spanked " + args[0].toString(), {file: spanks})
-    else	message.channel.send("who do you want to spank (%spank (user))")
+    else	message.channel.send(":x: | Usage: (%spank (user))")
     } 
-    else message.channel.send("THINK OF THE KIDS!!!!!!!! THEY DONT WANT TO SEE THIS BAKA!!!!!!!! \nthis channel is not marked for nsfw content")  
+    else message.channel.send(":x: | This channel is not a NSFW channel")  
     
 }
 
